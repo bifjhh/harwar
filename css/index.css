@@ -1,24 +1,32 @@
-/* 导航块 开始 */
+/* 导航块 开始 都是*/
 .navbar {
-  margin-bottom: 0;
-  height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
   padding: 20px 0 10px 0;
 }
-.navbar-header {
+.navbar .navbar-header {
   position: relative;
   float: left;
+  margin-left: 15px;
   overflow: hidden;
 }
-.navbar-header a:first-of-type {
-  display: block;
-  padding: 0;
-  width: 150px;
+.navbar .navbar-header a {
+  width: 165px;
   height: 40px;
-  background: url(../images/sprite.png) no-repeat 0px -195px;
+  padding-left: 15px;
+  background: url(../images/sprite.png) no-repeat 15px -190px;
+  margin-left: 0;
+}
+.navbar #bs-example-navbar-collapse-1 {
+  width: 100%;
 }
 /* 导航块  结束 */
 /* banner 开始 */
 .banner {
+  margin-top: 100px;
   margin-bottom: 30px;
 }
 .carousel-control.right {
@@ -59,7 +67,7 @@
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
-  width: 100%!important;
+  width: 100% !important;
   max-width: 1440px;
 }
 .card > .row {
@@ -90,8 +98,8 @@
   height: 100%;
 }
 .card .card_multi_img .card_l_img > a span {
-  width: auto!important;
-  height: auto!important;
+  width: auto !important;
+  height: auto !important;
 }
 .card .card_multi_img .card_l_img > a span img {
   display: block;
@@ -104,7 +112,7 @@
   margin: 0 auto;
   padding-right: 15px;
   padding-left: 15px;
-  width: 100%!important;
+  width: 100% !important;
   max-width: 1440px;
 }
 .video > .row {
@@ -112,8 +120,8 @@
   overflow: hidden;
 }
 .video > .row span {
-  width: auto!important;
-  height: auto!important;
+  width: auto !important;
+  height: auto !important;
   background-image: none;
 }
 .video > .row span img {

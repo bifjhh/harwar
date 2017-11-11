@@ -18,20 +18,24 @@ input {
 }
 
 body {
-    font-family: "微软雅黑", sans-serif;
-    font-size: 13px;
+    font-family: frutigernext, Microsoft YaHei, Arial, Helvetica, sans-serif;
+    line-height: 28px;
+    font-size: 1.6rem;
 }
+
 ul {
     list-style: none;
 }
+
 li {
     list-style: none;
 }
 
 a,
 a:hover {
-    color: #666;
+    color: #333;
     text-decoration: none;
+    background-color: transparent;
 }
 
 img {
@@ -39,16 +43,12 @@ img {
     vertical-align: top;
 }
 
-input{
-    
+input {
     /*1.清除文本框获取焦点时默认的边框阴影*/
-
     outline: none;
     /*2.去除边框*/
-
     border: none;
     /*3.添加边框*/
-
     border: 1px solid #ccc;
 }
 
@@ -74,8 +74,6 @@ input{
 .clearfix {
     zoom: 1;
 }
-
-
 
 
 /*初始化*/
