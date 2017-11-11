@@ -1,3 +1,128 @@
+/* 导航块 开始 */
 .navbar {
   margin-bottom: 0;
+  height: 80px;
+  padding: 20px 0 10px 0;
 }
+.navbar-header {
+  position: relative;
+  float: left;
+  overflow: hidden;
+}
+.navbar-header a:first-of-type {
+  display: block;
+  padding: 0;
+  width: 150px;
+  height: 40px;
+  background: url(../images/sprite.png) no-repeat 0px -195px;
+}
+/* 导航块  结束 */
+/* banner 开始 */
+.banner {
+  margin-bottom: 30px;
+}
+.carousel-control.right {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.0001) 100%);
+}
+.carousel-control.right::before {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  display: block;
+  overflow: hidden;
+  margin-top: -50px;
+  width: 40px;
+  height: 100px;
+  background: url(../images/sprite.png) no-repeat -64px -725px;
+  content: "";
+}
+.carousel-control.left {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.0001) 100%);
+}
+.carousel-control.left::before {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  display: block;
+  overflow: hidden;
+  margin-top: -50px;
+  width: 40px;
+  height: 100px;
+  background: url(../images/sprite.png) no-repeat -64px -620px;
+  content: "";
+}
+/* banner 结束 */
+/* 宣传块 开始 */
+.card {
+  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%!important;
+  max-width: 1440px;
+}
+.card > .row {
+  margin-right: -10px;
+  margin-left: -10px;
+  padding: 0 5px;
+}
+.card > .row .row {
+  margin-right: -10px;
+  margin-left: -10px;
+}
+.card > .row .row > .col-sm-12 {
+  margin-bottom: 3%;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.card .col-sm-6 {
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-bottom: 1.5%;
+}
+.card .card_multi_img {
+  position: relative;
+  overflow: hidden;
+}
+.card .card_multi_img .card_l_img {
+  width: 100%;
+  height: 100%;
+}
+.card .card_multi_img .card_l_img > a span {
+  width: auto!important;
+  height: auto!important;
+}
+.card .card_multi_img .card_l_img > a span img {
+  display: block;
+  width: 110%;
+  height: 110%;
+}
+/* 宣传块 结束 */
+/* 视频块 开始 */
+.video {
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%!important;
+  max-width: 1440px;
+}
+.video > .row {
+  margin: 0px -15px;
+  overflow: hidden;
+}
+.video > .row span {
+  width: auto!important;
+  height: auto!important;
+  background-image: none;
+}
+.video > .row span img {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* 视频块 结束 */
+/* 新闻块 开始 */
+/* 新闻块 结束 */
+/* 底部块 开始 */
+/* 底部块 结束 */
