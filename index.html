@@ -8,7 +8,9 @@
     <title>哈瓦（HARWAR）----工业级无人机领航者！ </title>
     <link href="./lib/bootstrap/css/bootstrap.css" rel="stylesheet">
     <link href="./css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/hw.css">
     <link href="./css/index.css" rel="stylesheet">
+
     <!--[if lt IE 9]>
     <script src="./lib/html5shiv/html5shiv.min.js"></script>
     <script src="./lib/respond/respond.js"></script>
@@ -17,174 +19,425 @@
 
 <body>
     <!--导航块 开始-->
-    <nav class="navbar navbar-default">
-        <div class="container">
-            <!--  <div class="logo">
-                <a href="javascript:;" title="哈瓦"></a>
-            </div> -->
+    <div id="header">
 
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
+        <div id="masthead" class="">
+            <div class="lg-container">
 
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-                    aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#"></a>
+                <div id="logo">
+                    <a href="http://localhost:8080/tom/harwar/index.html" target="_blank" title="哈瓦"></a>
+                </div>
+                <ul class="nav hidden-sm hidden-xs">
+                    <li class="home">
+                        <a href="/cn/index.html">首页</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" data-menutype="megamenu" data-section="subnav_1">关于哈瓦</a>
+                    </li>
+                    <li>
+                        <a href="/cn/news/" data-menutype="megamenu" data-section="subnav_2">新闻资讯</a>
+                    </li>
+                    <li>
+                        <a href="/cn/product/" data-menutype="megamenu" data-section="subnav_3">产品中心</a>
+                    </li>
+                    <li>
+                        <a href="/cn/solution" data-menutype="megamenu" data-section="subnav_4">行业应用</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" data-menutype="megamenu" data-section="subnav_5" class="">服务支持</a>
+                    </li>
+                    <li>
+                        <a href="/cn/contact.html">联系我们</a>
+                    </li>
+                </ul>
+
+                <ul class="nav_right">
+                    <li id="language" class="hidden-xs hidden-sm">
+                        <a href="#" class="">切换语言
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="/cn/" target="_blank">简体中文</a>
+                            </li>
+                            <li>
+                                <a href="/en/" target="_blank">English</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="headsearch dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" id="searchdropmenu" href="#"></a>
+
+                        <div id="headsearch_box" aria-labelledby="searchdropmenu">
+                            <div class="triangle">
+                            </div>
+                            <div>
+                                <!--<form name="formsearch" action="/plus/search.php">-->
+                                <form name="formsearch" action="">
+                                    <input type="hidden" name="kwtype" value="0">
+                                    <input type="hidden" name="searchtype" value="title">
+                                    <input type="text" name="q" placeholder="搜索">
+                                    <input type="button" onclick="Usearch();">
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="show_more visible-sm visible-xs" id="mob_menuitem">
+                        <a href="#"></a>
+                    </li>
+                </ul>
+
+
             </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-                <ul class="nav navbar-nav">
-                    <li class="">
-                        <!-- active -->
-                        <a href="JavaScript:;">首页
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="">
-                        <!-- active -->
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">关于哈瓦
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="#">公司概况</a>
-                            </li>
-                            <li>
-                                <a href="#">荣誉资质</a>
-                            </li>
-                            <li>
-                                <a href="#">哈瓦大事件</a>
-                            </li>
-                            <li>
-                                <a href="#">联系我们</a>
-                            </li>
-                    
-                        </ul>
-                    </li>
-                    
-                    <li>
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">新闻资讯
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="#">企业新闻</a>
-                            </li>
-                            <li>
-                                <a href="#">展会活动</a>
-                            </li>
-                            <li>
-                                <a href="#">媒体报道</a>
-                            </li>
-                            <li>
-                                <a href="#">行业动态</a>
-                            </li>
-                    
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">产品中心
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="#">无人机</a>
-                            </li>
-                            <li>
-                                <a href="#">挂载云台</a>
-                            </li>
-                            <li>
-                                <a href="#">地面站</a>
-                            </li>
-                            <li>
-                                <a href="#">相关配件</a>
-                            </li>
-                    
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">行业应用
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="#">公安执法</a>
-                            </li>
-                            <li>
-                                <a href="#">消防救援</a>
-                            </li>
-                            <li>
-                                <a href="#">电力应用</a>
-                            </li>
-                            <li>
-                                <a href="#">石化应用</a>
-                            </li>
-                            <li>
-                                <a href="#">测绘勘察</a>
-                            </li>
-                            <li>
-                                <a href="#">路桥建设</a>
-                            </li>
-                            <li>
-                                <a href="#">水利巡检</a>
-                            </li>
-                            <li>
-                                <a href="#">环保监测</a>
-                            </li>
-                    
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">售后服务
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="#">常见问答</a>
-                            </li>
-                            <li>
-                                <a href="#">资料下载</a>
-                            </li>
-                            <li>
-                                <a href="#">需求定制</a>
-                            </li>
-                            <li>
-                                <a href="#">售后服务</a>
-                            </li>
-                    
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="JavaScript:;">联系我们</a>
-                    </li>
-                    
-                    
-                    </ul>
-                    
-                    <ul class="nav navbar-nav navbar-right">
-                        <!--   <li>
-                                            <a href="#">Link</a>
-                                        </li>-->
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">切换语言
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="#">简体中文</a>
-                                </li>
-                                <li>
-                                    <a href="#">English</a>
-                                </li>
-                    
-                            </ul>
-                        </li>
-                    </ul>
-            </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container-fluid -->
-    </nav>
+
+        <div id="subnav">
+            <div class="lg-container">
+                <div class="subnav_section" data-section="subnav_1">
+                    <div class="row">
+                        <div class="col-sm-3 subnav_con">
+                            <a href="javascript:;">
+                                <span class="lazy-loaded over">
+                                    <img src="images/C-1-1.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-1-1.jpg" style="">
+                                </span>
+                                <h3>公司概况</h3>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 subnav_con">
+                            <a href="javascript:;">
+                                <span class="lazy-loaded over">
+                                    <img src="images/C-1-5.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-1-5.jpg" style="">
+                                </span>
+                                <h3>荣誉资质</h3>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 subnav_con">
+                            <a href="javascript:;">
+                                <span class="lazy-loaded over">
+                                    <img src="images/C-1-2.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-1-2.jpg" style="">
+                                </span>
+                                <h3>哈瓦大事记</h3>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 subnav_con">
+                            <a href="javascript:;">
+                                <span class="lazy-loaded over">
+                                    <img src="images/C-1-4.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-1-4.jpg" style="">
+                                </span>
+                                <h3>联系我们</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="subnav_section" data-section="subnav_2">
+                    <div class="row">
+                        <div class="col-sm-3 subnav_con">
+                            <a href="javascript:;">
+                                <span class="lazy-loaded over">
+                                    <img src="images/C-2-1.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-2-1.jpg" style="">
+                                </span>
+                                <h3>企业新闻</h3>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 subnav_con">
+                            <a href="javascript:;">
+                                <span class="lazy-loaded over">
+                                    <img src="images/C-2-2.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-2-2.jpg" style="">
+                                </span>
+                                <h3>展会活动</h3>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 subnav_con">
+                            <a href="javascript:;">
+                                <span class="lazy-loaded over">
+                                    <img src="images/C-2-3.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-2-3.jpg" style="">
+                                </span>
+                                <h3>媒体报道</h3>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 subnav_con">
+                            <a href="javascript:;">
+                                <span class="lazy-loaded over">
+                                    <img src="images/C-2-4.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-2-4.jpg" style="">
+                                </span>
+                                <h3>行业动态</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="subnav_section" data-section="subnav_3">
+                    <div class="row">
+                        <div class="col-sm-3 subnav_con">
+                            <a href="javascript:;">
+                                <span class="lazy-loaded over">
+                                    <img src="images/C-3-1.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-3-1.jpg" style="">
+                                </span>
+                                <h3>无人机</h3>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 subnav_con">
+                            <a href="javascript:;">
+                                <span class="lazy-loaded over">
+                                    <img src="images/C-3-2.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-3-2.jpg" style="">
+                                </span>
+                                <h3>挂载云台</h3>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 subnav_con">
+                            <a href="javascript:;">
+                                <span class="lazy-loaded over">
+                                    <img src="images/C-3-3.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-3-3.jpg" style="">
+                                </span>
+                                <h3>地面站</h3>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 subnav_con">
+                            <a href="javascript:;">
+                                <span class="lazy-loaded over">
+                                    <img src="images/C-3-4.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-3-4.jpg" style="">
+                                </span>
+                                <h3>相关配件</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="subnav_section " data-section="subnav_4">
+                    <div class="row">
+                        <div class="col-sm-3 subnav_con">
+                            <a href="javascript:;">
+                                <span class="lazy-loaded over">
+                                    <img src="images/C-4-1.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-4-1.jpg" style="">
+                                </span>
+                                <h3>公安执法</h3>
+                            </a>
+                            <a href="javascript:;">
+                                <span class="lazy-loaded over">
+                                    <img src="images/C-4-5.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-4-5.jpg" style="">
+                                </span>
+                                <h3>测绘勘察</h3>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 subnav_con">
+                            <a href="javascript:;">
+                                <span class="lazy-loaded over">
+                                    <img src="images/C-4-2.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-4-2.jpg" style="">
+                                </span>
+                                <h3>消防救援</h3>
+                            </a>
+                            <a href="javascript:;">
+                                <span class="lazy-loaded over">
+                                    <img src="images/C-4-6.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-4-6.jpg" style="">
+                                </span>
+                                <h3>路桥建设</h3>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 subnav_con">
+                            <a href="javascript:;">
+                                <span class="lazy-loaded over">
+                                    <img src="images/C-4-3.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-4-3.jpg" style="">
+                                </span>
+                                <h3>电力应用</h3>
+                            </a>
+                            <a href="javascript:;">
+                                <span class="lazy-loaded over">
+                                    <img src="images/C-4-7.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-4-7.jpg" style="">
+                                </span>
+                                <h3>水利巡检</h3>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 subnav_con">
+                            <a href="javascript:;">
+                                <span class="lazy-loaded over">
+                                    <img src="images/C-4-4.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-4-4.jpg" style="">
+                                </span>
+                                <h3>石化应用</h3>
+                            </a>
+                            <a href="javascript:;">
+                                <span class="lazy-loaded over">
+                                    <img src="images/C-4-8.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-4-8.jpg" style="">
+                                </span>
+                                <h3>环保监测</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="subnav_section" data-section="subnav_5">
+                    <div class="row">
+                        <div class="col-sm-3 subnav_con">
+                            <a href="javascript:;">
+                                <span class="lazy-loaded over">
+                                    <img src="images/C-5-1.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-5-1.jpg" style="">
+                                </span>
+                                <h3>常见问答</h3>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 subnav_con">
+                            <a href="javascript:;">
+                                <span class="lazy-loaded over">
+                                    <img src="images/C-5-2.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-5-2.jpg" style="">
+                                </span>
+                                <h3>资料下载</h3>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 subnav_con">
+                            <a href="javascript:;">
+                                <span class="lazy-loaded over">
+                                    <img src="images/C-5-3.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-5-3.jpg" style="">
+                                </span>
+                                <h3>需求定制</h3>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 subnav_con">
+                            <a href="javascript:;">
+                                <span class="lazy-loaded over">
+                                    <img src="images/C-5-4.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-5-4.jpg" style="">
+                                </span>
+                                <h3>售后服务</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="subnav_section " data-section="subnav_6">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- 手机 -->
+    <div id="mob_nav">
+        <ul>
+            <li class="search clearfix">
+                <span class="prev">
+                    <a href="/cn//">首页</a>
+                </span>
+                <div id="mob_nav_close">
+                </div>
+            </li>
+            <li class="has_more" data-index="0">
+                <a href="/cn/#">关于哈瓦
+                    <em class="jiantou">&nbsp;</em>
+                </a>
+                <ul>
+                    <li>
+                        <a href="/cn/about.html">公司概况</a>
+                    </li>
+                    <li>
+                        <a href="/cn/honor.html">荣誉资质</a>
+                    </li>
+                    <li>
+                        <a href="/cn/history.html">哈瓦大事记</a>
+                    </li>
+                    <li>
+                        <a href="/cn/contact.html">联系我们</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="has_more" data-index="1">
+                <a href="/cn/news">新闻资讯
+                    <em class="jiantou">&nbsp;</em>
+                </a>
+                <ul>
+                    <li>
+                        <a href="/cn/news/list_5_1.html">企业新闻</a>
+                    </li>
+                    <li>
+                        <a href="/cn/news/list_6_1.html">展会活动</a>
+                    </li>
+                    <li>
+                        <a href="/cn/news/list_7_1.html">媒体报道</a>
+                    </li>
+                    <li>
+                        <a href="/cn/news/list_8_1.html">行业动态</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="has_more" data-index="2">
+                <a href="/cn/uav">产品中心
+                    <em class="jiantou">&nbsp;</em>
+                </a>
+                <ul>
+                    <li>
+                        <a href="/cn/product/">无人机</a>
+                    </li>
+                    <li>
+                        <a href="/cn/product/list_10_1.html">挂载云台</a>
+                    </li>
+                    <li>
+                        <a href="/cn/product/list_11_1.html">地面站</a>
+                    </li>
+                    <li>
+                        <a href="/cn/product/list_12_1.html">相关配件</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="has_more" data-index="3">
+                <a href="/cn/solution">行业应用
+                    <em class="jiantou">&nbsp;</em>
+                </a>
+                <ul>
+                    <li>
+                        <a href="/cn/solution/police.html">公安执法</a>
+                    </li>
+                    <li>
+                        <a href="/cn/solution/fire.html">消防救援</a>
+                    </li>
+                    <li>
+                        <a href="/cn/solution/electricity.html">电力应用</a>
+                    </li>
+                    <li>
+                        <a href="/cn/solution/petrochemical.html">石化应用</a>
+                    </li>
+                    <li>
+                        <a href="/cn/solution/mapping.html">测绘勘察</a>
+                    </li>
+                    <li>
+                        <a href="/cn/solution/building.html">路桥建设</a>
+                    </li>
+                    <li>
+                        <a href="/cn/solution/water.html">水利巡检</a>
+                    </li>
+                    <li>
+                        <a href="/cn/solution/environment.html">环保监测</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="has_more" data-index="4">
+                <a href="/cn/#">售后服务
+                    <em class="jiantou">&nbsp;</em>
+                </a>
+                <ul>
+                    <li>
+                        <a href="/cn/faq.html">常见问答</a>
+                    </li>
+                    <li>
+                        <a href="/cn/download.html">资料下载</a>
+                    </li>
+                    <li>
+                        <a href="/cn/feedback.html">需求定制</a>
+                    </li>
+                    <li>
+                        <a href="/cn/service.html">售后服务</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="no_more">
+                <a href="/cn/contact.html">联系我们</a>
+            </li>
+            <li class="has_more" data-index="5">
+                <a href="/cn/#">选择语言
+                    <em class="jiantou">&nbsp;</em>
+                </a>
+                <ul>
+                    <li>
+                        <a href="/cn/">中文</a>
+                    </li>
+                    <li>
+                        <a href="/en/">ENGLISH</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
     <!--导航块 结束-->
 
     <!--banner 开始-->
@@ -514,7 +767,49 @@
 
     <!--宣传块 结束-->
     <!-- 新闻块 开始-->
-    <div class="news"></div>
+    <div class=" lg-container">
+        <div class="news row">
+            <div class="n_tit">
+                <a class="more" href="#">+</a>
+                 Harwar News
+                 <br>
+                 <em>哈瓦新闻</em>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <ul>
+                    <li>
+                        <div class="new_l">
+                            <div class="new_lim">
+                                <img src="images/1-30115848808.jpg" alt="">
+                            </div>
+                            <h4>2亿+像素三维立体影像，这才是无人机测绘真旗舰</h4>
+                            <div class="new_p"> 哈瓦三维立体摄影系统是通过在同一挂载云台上搭载五台传感器（总像素高达2.12亿），同时从垂直、侧视等不同的角度采集…</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="new_l">
+                            <div class="new_lim">
+                                <img src="images/1-28145650812.jpg" alt="">
+                            </div>
+                            <h4>哈瓦警用无人机应邀出席山西国际社会公共安全产品博览会</h4>
+                            <div class="new_p"> “普及安防知识、展示先进技术、发展创新、科技引领”2017第四届山西国际社会公共安全产品博览会于9月27日至29日在中国…</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="new_l">
+                            <div class="new_lim">
+                                <img src="images/1-1FQ21A454O0.jpg" alt="">
+                            </div>
+                            <h4>国外的麦田怪圈弱爆了，中国菜花田里种出龙袍图！</h4>
+                            <div class="new_p"> 无人机测绘技术不仅能应用于现代化的精准农业，还能助现代旅游农业一臂之力！…</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6"></div>
+            <div class="col-md-3 col-sm-6 col-xs-6"></div>
+        </div>
+    </div>
     <!--新闻块 结束-->
 
     <!--底部 开始-->
@@ -523,6 +818,7 @@
 
     <script src="./lib/jquery/jquery.min.js"></script>
     <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/com.js"></script>
 
 </body>
 

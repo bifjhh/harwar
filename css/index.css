@@ -1,32 +1,7 @@
 /* 导航块 开始 都是*/
-.navbar {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  padding: 20px 0 10px 0;
-}
-.navbar .navbar-header {
-  position: relative;
-  float: left;
-  margin-left: 15px;
-  overflow: hidden;
-}
-.navbar .navbar-header a {
-  width: 165px;
-  height: 40px;
-  padding-left: 15px;
-  background: url(../images/sprite.png) no-repeat 15px -190px;
-  margin-left: 0;
-}
-.navbar #bs-example-navbar-collapse-1 {
-  width: 100%;
-}
 /* 导航块  结束 */
 /* banner 开始 */
 .banner {
-  margin-top: 100px;
   margin-bottom: 30px;
 }
 .carousel-control.right {
@@ -131,6 +106,72 @@
 }
 /* 视频块 结束 */
 /* 新闻块 开始 */
+.news {
+  margin: 20px 5px 0 5px;
+}
+.news .n_tit {
+  margin-bottom: 25px;
+  padding-left: 17px;
+  height: 44px;
+  border-left: 4px solid #CE0000;
+  font-size: 24px;
+  color: #ce0000;
+  line-height: 20px;
+}
+.news .n_tit .more {
+  margin-right: 15px;
+  margin-top: 10px;
+  font-size: 36px;
+  color: #b90000;
+  -webkit-transition: .7s;
+  -o-transition: .7s;
+  transition: .7s;
+  float: right;
+}
+.news .n_tit em {
+  color: #9b9b9b;
+  font-size: 16px;
+  line-height: 35px;
+}
+.news .new_l {
+  width: 100%;
+  height: 102px;
+  margin-bottom: 20px;
+  float: left;
+  position: relative;
+  color: #757575;
+}
+.news .new_l .new_lim {
+  margin: 1px;
+  float: left;
+  margin-right: 17px;
+  display: block;
+  width: 150px;
+  height: 100%;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 100px;
+  text-align: center;
+  position: relative;
+}
+.news .new_l .new_lim img {
+  width: 100%;
+}
+.news .new_l > h4 {
+  font-size: 14px;
+  height: 25px;
+  line-height: 25px;
+  padding-top: 5px;
+  margin: 0;
+}
+.news .new_l .new_p {
+  width: 100%;
+  text-indent: 2em;
+  padding: 20px 20px 0 20px;
+  color: #999;
+  font-size: 14px;
+  line-height: 25px;
+}
 /* 新闻块 结束 */
 /* 底部块 开始 */
 /* 底部块 结束 */

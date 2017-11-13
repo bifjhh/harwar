@@ -4,6 +4,7 @@
         padding: 20px 0 10px 0;
         width: 100%;
         height: 80px;
+        box-shadow: 0 2px 8px rgba(0,0,0,.1);
         .lg-container{
         .logo{
             float: left;
@@ -133,6 +134,31 @@
                 .headsearch>a:before {background-position: -39px -70px;}
                 .show_more>a:hover:before {background-position: 0 -105px;}
                 .headsearch>a:hover:before {background-position: -39px -105px;}
+            }
+        }
+    }
+    .subnav{
+        position: absolute;
+        z-index: 899;
+        overflow: hidden;
+        width: 100%;
+        opacity: 0;
+        transition: all .4s cubic-bezier(.2,1,.2,1);
+        transform: translate3d(0,-105%,0);
+        >div {
+            position: relative;
+        }
+        .subnav_section {
+            position: absolute;
+            z-index: 90;
+            margin-top: -105%\9;
+            padding: 0;
+            width: 100%;
+            transition: all .4s ease;
+            transform: translate3d(0,-105%,0);
+            .subnav_con {
+                padding: 10px;
+                margin-top: 10px;
             }
         }
     }
