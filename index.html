@@ -2,855 +2,985 @@
 <html lang="zh-CN">
 
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>哈瓦（HARWAR）----工业级无人机领航者！ </title>
-<link href="./lib/bootstrap/css/bootstrap.css" rel="stylesheet">
-<link href="./css/base.css" rel="stylesheet">
-<link rel="stylesheet" href="css/hw.css">
-<link href="./css/index.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>哈瓦（HARWAR）----工业级无人机领航者！ </title>
+    <link href="./lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="./css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/hw.css">
+    <link href="./css/index.css" rel="stylesheet">
 
-<!--[if lt IE 9]>
+    <!--[if lt IE 9]>
 <script src="./lib/html5shiv/html5shiv.min.js"></script>
 <script src="./lib/respond/respond.js"></script>
 <![endif]-->
 </head>
 
 <body>
-<!--导航块 开始-->
-<div id="header">
+    <!--导航块 开始-->
+    <div id="header">
 
-    <div id="masthead" class="">
-        <div class="lg-container">
+        <div id="masthead" class="">
+            <div class="lg-container">
 
-            <div id="logo">
-                <a href="http://localhost:8080/tom/harwar/index.html" target="_blank" title="哈瓦"></a>
-            </div>
-            <ul class="nav hidden-sm hidden-xs">
-                <li class="home">
-                    <a href="/cn/index.html">首页</a>
-                </li>
-                <li>
-                    <a href="javascript:void(0)" data-menutype="megamenu" data-section="subnav_1">关于哈瓦</a>
-                </li>
-                <li>
-                    <a href="/cn/news/" data-menutype="megamenu" data-section="subnav_2">新闻资讯</a>
-                </li>
-                <li>
-                    <a href="/cn/product/" data-menutype="megamenu" data-section="subnav_3">产品中心</a>
-                </li>
-                <li>
-                    <a href="/cn/solution" data-menutype="megamenu" data-section="subnav_4">行业应用</a>
-                </li>
-                <li>
-                    <a href="javascript:void(0)" data-menutype="megamenu" data-section="subnav_5" class="">服务支持</a>
-                </li>
-                <li>
-                    <a href="/cn/contact.html">联系我们</a>
-                </li>
-            </ul>
+                <div id="logo">
+                    <a href="http://localhost:8080/tom/harwar/index.html" target="_blank" title="哈瓦"></a>
+                </div>
+                <ul class="nav hidden-sm hidden-xs">
+                    <li class="home">
+                        <a href="/cn/index.html">首页</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" data-menutype="megamenu" data-section="subnav_1">关于哈瓦</a>
+                    </li>
+                    <li>
+                        <a href="/cn/news/" data-menutype="megamenu" data-section="subnav_2">新闻资讯</a>
+                    </li>
+                    <li>
+                        <a href="/cn/product/" data-menutype="megamenu" data-section="subnav_3">产品中心</a>
+                    </li>
+                    <li>
+                        <a href="/cn/solution" data-menutype="megamenu" data-section="subnav_4">行业应用</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" data-menutype="megamenu" data-section="subnav_5" class="">服务支持</a>
+                    </li>
+                    <li>
+                        <a href="/cn/contact.html">联系我们</a>
+                    </li>
+                </ul>
 
-            <ul class="nav_right">
-                <li id="language" class="hidden-xs hidden-sm">
-                    <a href="#" class="">切换语言
-                        <span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a href="/cn/" target="_blank">简体中文</a>
-                        </li>
-                        <li>
-                            <a href="/en/" target="_blank">English</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="headsearch dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" id="searchdropmenu" href="#"></a>
+                <ul class="nav_right">
+                    <li id="language" class="hidden-xs hidden-sm">
+                        <a href="#" class="">切换语言
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="/cn/" target="_blank">简体中文</a>
+                            </li>
+                            <li>
+                                <a href="/en/" target="_blank">English</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="headsearch dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" id="searchdropmenu" href="#"></a>
 
-                    <div id="headsearch_box" aria-labelledby="searchdropmenu">
-                        <div class="triangle">
+                        <div id="headsearch_box" aria-labelledby="searchdropmenu">
+                            <div class="triangle">
+                            </div>
+                            <div>
+                                <!--<form name="formsearch" action="/plus/search.php">-->
+                                <form name="formsearch" action="">
+                                    <input type="hidden" name="kwtype" value="0">
+                                    <input type="hidden" name="searchtype" value="title">
+                                    <input type="text" name="q" placeholder="搜索">
+                                    <input type="button" onclick="Usearch();">
+                                </form>
+                            </div>
                         </div>
-                        <div>
-                            <!--<form name="formsearch" action="/plus/search.php">-->
-                            <form name="formsearch" action="">
-                                <input type="hidden" name="kwtype" value="0">
-                                <input type="hidden" name="searchtype" value="title">
-                                <input type="text" name="q" placeholder="搜索">
-                                <input type="button" onclick="Usearch();">
-                            </form>
+                    </li>
+                    <li class="show_more visible-sm visible-xs" id="mob_menuitem">
+                        <a href="#"></a>
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+
+        <div id="subnav">
+            <div class="lg-container">
+                <div class="subnav_section" data-section="subnav_1">
+                    <div class="row">
+                        <div class="col-sm-3 subnav_con">
+                            <a href="javascript:;">
+                                <span class="lazy-loaded over">
+                                    <img src="images/C-1-1.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-1-1.jpg" style="">
+                                </span>
+                                <h3>公司概况</h3>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 subnav_con">
+                            <a href="javascript:;">
+                                <span class="lazy-loaded over">
+                                    <img src="images/C-1-5.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-1-5.jpg" style="">
+                                </span>
+                                <h3>荣誉资质</h3>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 subnav_con">
+                            <a href="javascript:;">
+                                <span class="lazy-loaded over">
+                                    <img src="images/C-1-2.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-1-2.jpg" style="">
+                                </span>
+                                <h3>哈瓦大事记</h3>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 subnav_con">
+                            <a href="javascript:;">
+                                <span class="lazy-loaded over">
+                                    <img src="images/C-1-4.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-1-4.jpg" style="">
+                                </span>
+                                <h3>联系我们</h3>
+                            </a>
                         </div>
                     </div>
-                </li>
-                <li class="show_more visible-sm visible-xs" id="mob_menuitem">
-                    <a href="#"></a>
-                </li>
-            </ul>
-
-
-        </div>
-    </div>
-
-    <div id="subnav">
-        <div class="lg-container">
-            <div class="subnav_section" data-section="subnav_1">
-                <div class="row">
-                    <div class="col-sm-3 subnav_con">
-                        <a href="javascript:;">
-                            <span class="lazy-loaded over">
-                                <img src="images/C-1-1.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-1-1.jpg" style="">
-                            </span>
-                            <h3>公司概况</h3>
-                        </a>
-                    </div>
-                    <div class="col-sm-3 subnav_con">
-                        <a href="javascript:;">
-                            <span class="lazy-loaded over">
-                                <img src="images/C-1-5.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-1-5.jpg" style="">
-                            </span>
-                            <h3>荣誉资质</h3>
-                        </a>
-                    </div>
-                    <div class="col-sm-3 subnav_con">
-                        <a href="javascript:;">
-                            <span class="lazy-loaded over">
-                                <img src="images/C-1-2.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-1-2.jpg" style="">
-                            </span>
-                            <h3>哈瓦大事记</h3>
-                        </a>
-                    </div>
-                    <div class="col-sm-3 subnav_con">
-                        <a href="javascript:;">
-                            <span class="lazy-loaded over">
-                                <img src="images/C-1-4.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-1-4.jpg" style="">
-                            </span>
-                            <h3>联系我们</h3>
-                        </a>
+                </div>
+                <div class="subnav_section" data-section="subnav_2">
+                    <div class="row">
+                        <div class="col-sm-3 subnav_con">
+                            <a href="javascript:;">
+                                <span class="lazy-loaded over">
+                                    <img src="images/C-2-1.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-2-1.jpg" style="">
+                                </span>
+                                <h3>企业新闻</h3>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 subnav_con">
+                            <a href="javascript:;">
+                                <span class="lazy-loaded over">
+                                    <img src="images/C-2-2.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-2-2.jpg" style="">
+                                </span>
+                                <h3>展会活动</h3>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 subnav_con">
+                            <a href="javascript:;">
+                                <span class="lazy-loaded over">
+                                    <img src="images/C-2-3.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-2-3.jpg" style="">
+                                </span>
+                                <h3>媒体报道</h3>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 subnav_con">
+                            <a href="javascript:;">
+                                <span class="lazy-loaded over">
+                                    <img src="images/C-2-4.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-2-4.jpg" style="">
+                                </span>
+                                <h3>行业动态</h3>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="subnav_section" data-section="subnav_2">
-                <div class="row">
-                    <div class="col-sm-3 subnav_con">
-                        <a href="javascript:;">
-                            <span class="lazy-loaded over">
-                                <img src="images/C-2-1.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-2-1.jpg" style="">
-                            </span>
-                            <h3>企业新闻</h3>
-                        </a>
-                    </div>
-                    <div class="col-sm-3 subnav_con">
-                        <a href="javascript:;">
-                            <span class="lazy-loaded over">
-                                <img src="images/C-2-2.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-2-2.jpg" style="">
-                            </span>
-                            <h3>展会活动</h3>
-                        </a>
-                    </div>
-                    <div class="col-sm-3 subnav_con">
-                        <a href="javascript:;">
-                            <span class="lazy-loaded over">
-                                <img src="images/C-2-3.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-2-3.jpg" style="">
-                            </span>
-                            <h3>媒体报道</h3>
-                        </a>
-                    </div>
-                    <div class="col-sm-3 subnav_con">
-                        <a href="javascript:;">
-                            <span class="lazy-loaded over">
-                                <img src="images/C-2-4.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-2-4.jpg" style="">
-                            </span>
-                            <h3>行业动态</h3>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="subnav_section" data-section="subnav_3">
-                <div class="row">
-                    <div class="col-sm-3 subnav_con">
-                        <a href="javascript:;">
-                            <span class="lazy-loaded over">
-                                <img src="images/C-3-1.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-3-1.jpg" style="">
-                            </span>
-                            <h3>无人机</h3>
-                        </a>
-                    </div>
-                    <div class="col-sm-3 subnav_con">
-                        <a href="javascript:;">
-                            <span class="lazy-loaded over">
-                                <img src="images/C-3-2.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-3-2.jpg" style="">
-                            </span>
-                            <h3>挂载云台</h3>
-                        </a>
-                    </div>
-                    <div class="col-sm-3 subnav_con">
-                        <a href="javascript:;">
-                            <span class="lazy-loaded over">
-                                <img src="images/C-3-3.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-3-3.jpg" style="">
-                            </span>
-                            <h3>地面站</h3>
-                        </a>
-                    </div>
-                    <div class="col-sm-3 subnav_con">
-                        <a href="javascript:;">
-                            <span class="lazy-loaded over">
-                                <img src="images/C-3-4.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-3-4.jpg" style="">
-                            </span>
-                            <h3>相关配件</h3>
-                        </a>
+                <div class="subnav_section" data-section="subnav_3">
+                    <div class="row">
+                        <div class="col-sm-3 subnav_con">
+                            <a href="javascript:;">
+                                <span class="lazy-loaded over">
+                                    <img src="images/C-3-1.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-3-1.jpg" style="">
+                                </span>
+                                <h3>无人机</h3>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 subnav_con">
+                            <a href="javascript:;">
+                                <span class="lazy-loaded over">
+                                    <img src="images/C-3-2.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-3-2.jpg" style="">
+                                </span>
+                                <h3>挂载云台</h3>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 subnav_con">
+                            <a href="javascript:;">
+                                <span class="lazy-loaded over">
+                                    <img src="images/C-3-3.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-3-3.jpg" style="">
+                                </span>
+                                <h3>地面站</h3>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 subnav_con">
+                            <a href="javascript:;">
+                                <span class="lazy-loaded over">
+                                    <img src="images/C-3-4.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-3-4.jpg" style="">
+                                </span>
+                                <h3>相关配件</h3>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="subnav_section " data-section="subnav_4">
-                <div class="row">
-                    <div class="col-sm-3 subnav_con">
-                        <a href="javascript:;">
-                            <span class="lazy-loaded over">
-                                <img src="images/C-4-1.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-4-1.jpg" style="">
-                            </span>
-                            <h3>公安执法</h3>
-                        </a>
-                        <a href="javascript:;">
-                            <span class="lazy-loaded over">
-                                <img src="images/C-4-5.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-4-5.jpg" style="">
-                            </span>
-                            <h3>测绘勘察</h3>
-                        </a>
-                    </div>
-                    <div class="col-sm-3 subnav_con">
-                        <a href="javascript:;">
-                            <span class="lazy-loaded over">
-                                <img src="images/C-4-2.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-4-2.jpg" style="">
-                            </span>
-                            <h3>消防救援</h3>
-                        </a>
-                        <a href="javascript:;">
-                            <span class="lazy-loaded over">
-                                <img src="images/C-4-6.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-4-6.jpg" style="">
-                            </span>
-                            <h3>路桥建设</h3>
-                        </a>
-                    </div>
-                    <div class="col-sm-3 subnav_con">
-                        <a href="javascript:;">
-                            <span class="lazy-loaded over">
-                                <img src="images/C-4-3.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-4-3.jpg" style="">
-                            </span>
-                            <h3>电力应用</h3>
-                        </a>
-                        <a href="javascript:;">
-                            <span class="lazy-loaded over">
-                                <img src="images/C-4-7.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-4-7.jpg" style="">
-                            </span>
-                            <h3>水利巡检</h3>
-                        </a>
-                    </div>
-                    <div class="col-sm-3 subnav_con">
-                        <a href="javascript:;">
-                            <span class="lazy-loaded over">
-                                <img src="images/C-4-4.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-4-4.jpg" style="">
-                            </span>
-                            <h3>石化应用</h3>
-                        </a>
-                        <a href="javascript:;">
-                            <span class="lazy-loaded over">
-                                <img src="images/C-4-8.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-4-8.jpg" style="">
-                            </span>
-                            <h3>环保监测</h3>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="subnav_section" data-section="subnav_5">
-                <div class="row">
-                    <div class="col-sm-3 subnav_con">
-                        <a href="javascript:;">
-                            <span class="lazy-loaded over">
-                                <img src="images/C-5-1.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-5-1.jpg" style="">
-                            </span>
-                            <h3>常见问答</h3>
-                        </a>
-                    </div>
-                    <div class="col-sm-3 subnav_con">
-                        <a href="javascript:;">
-                            <span class="lazy-loaded over">
-                                <img src="images/C-5-2.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-5-2.jpg" style="">
-                            </span>
-                            <h3>资料下载</h3>
-                        </a>
-                    </div>
-                    <div class="col-sm-3 subnav_con">
-                        <a href="javascript:;">
-                            <span class="lazy-loaded over">
-                                <img src="images/C-5-3.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-5-3.jpg" style="">
-                            </span>
-                            <h3>需求定制</h3>
-                        </a>
-                    </div>
-                    <div class="col-sm-3 subnav_con">
-                        <a href="javascript:;">
-                            <span class="lazy-loaded over">
-                                <img src="images/C-5-4.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-5-4.jpg" style="">
-                            </span>
-                            <h3>售后服务</h3>
-                        </a>
+                <div class="subnav_section " data-section="subnav_4">
+                    <div class="row">
+                        <div class="col-sm-3 subnav_con">
+                            <a href="javascript:;">
+                                <span class="lazy-loaded over">
+                                    <img src="images/C-4-1.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-4-1.jpg" style="">
+                                </span>
+                                <h3>公安执法</h3>
+                            </a>
+                            <a href="javascript:;">
+                                <span class="lazy-loaded over">
+                                    <img src="images/C-4-5.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-4-5.jpg" style="">
+                                </span>
+                                <h3>测绘勘察</h3>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 subnav_con">
+                            <a href="javascript:;">
+                                <span class="lazy-loaded over">
+                                    <img src="images/C-4-2.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-4-2.jpg" style="">
+                                </span>
+                                <h3>消防救援</h3>
+                            </a>
+                            <a href="javascript:;">
+                                <span class="lazy-loaded over">
+                                    <img src="images/C-4-6.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-4-6.jpg" style="">
+                                </span>
+                                <h3>路桥建设</h3>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 subnav_con">
+                            <a href="javascript:;">
+                                <span class="lazy-loaded over">
+                                    <img src="images/C-4-3.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-4-3.jpg" style="">
+                                </span>
+                                <h3>电力应用</h3>
+                            </a>
+                            <a href="javascript:;">
+                                <span class="lazy-loaded over">
+                                    <img src="images/C-4-7.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-4-7.jpg" style="">
+                                </span>
+                                <h3>水利巡检</h3>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 subnav_con">
+                            <a href="javascript:;">
+                                <span class="lazy-loaded over">
+                                    <img src="images/C-4-4.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-4-4.jpg" style="">
+                                </span>
+                                <h3>石化应用</h3>
+                            </a>
+                            <a href="javascript:;">
+                                <span class="lazy-loaded over">
+                                    <img src="images/C-4-8.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-4-8.jpg" style="">
+                                </span>
+                                <h3>环保监测</h3>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="subnav_section " data-section="subnav_6">
-            </div>
-        </div>
-    </div>
-
-</div>
-<!-- 手机 -->
-<div id="mob_nav">
-    <ul>
-        <li class="search clearfix">
-            <span class="prev">
-                <a href="/cn//">首页</a>
-            </span>
-            <div id="mob_nav_close">
-            </div>
-        </li>
-        <li class="has_more" data-index="0">
-            <a href="/cn/#">关于哈瓦
-                <em class="jiantou">&nbsp;</em>
-            </a>
-            <ul>
-                <li>
-                    <a href="/cn/about.html">公司概况</a>
-                </li>
-                <li>
-                    <a href="/cn/honor.html">荣誉资质</a>
-                </li>
-                <li>
-                    <a href="/cn/history.html">哈瓦大事记</a>
-                </li>
-                <li>
-                    <a href="/cn/contact.html">联系我们</a>
-                </li>
-            </ul>
-        </li>
-        <li class="has_more" data-index="1">
-            <a href="/cn/news">新闻资讯
-                <em class="jiantou">&nbsp;</em>
-            </a>
-            <ul>
-                <li>
-                    <a href="/cn/news/list_5_1.html">企业新闻</a>
-                </li>
-                <li>
-                    <a href="/cn/news/list_6_1.html">展会活动</a>
-                </li>
-                <li>
-                    <a href="/cn/news/list_7_1.html">媒体报道</a>
-                </li>
-                <li>
-                    <a href="/cn/news/list_8_1.html">行业动态</a>
-                </li>
-            </ul>
-        </li>
-        <li class="has_more" data-index="2">
-            <a href="/cn/uav">产品中心
-                <em class="jiantou">&nbsp;</em>
-            </a>
-            <ul>
-                <li>
-                    <a href="/cn/product/">无人机</a>
-                </li>
-                <li>
-                    <a href="/cn/product/list_10_1.html">挂载云台</a>
-                </li>
-                <li>
-                    <a href="/cn/product/list_11_1.html">地面站</a>
-                </li>
-                <li>
-                    <a href="/cn/product/list_12_1.html">相关配件</a>
-                </li>
-            </ul>
-        </li>
-        <li class="has_more" data-index="3">
-            <a href="/cn/solution">行业应用
-                <em class="jiantou">&nbsp;</em>
-            </a>
-            <ul>
-                <li>
-                    <a href="/cn/solution/police.html">公安执法</a>
-                </li>
-                <li>
-                    <a href="/cn/solution/fire.html">消防救援</a>
-                </li>
-                <li>
-                    <a href="/cn/solution/electricity.html">电力应用</a>
-                </li>
-                <li>
-                    <a href="/cn/solution/petrochemical.html">石化应用</a>
-                </li>
-                <li>
-                    <a href="/cn/solution/mapping.html">测绘勘察</a>
-                </li>
-                <li>
-                    <a href="/cn/solution/building.html">路桥建设</a>
-                </li>
-                <li>
-                    <a href="/cn/solution/water.html">水利巡检</a>
-                </li>
-                <li>
-                    <a href="/cn/solution/environment.html">环保监测</a>
-                </li>
-            </ul>
-        </li>
-        <li class="has_more" data-index="4">
-            <a href="/cn/#">售后服务
-                <em class="jiantou">&nbsp;</em>
-            </a>
-            <ul>
-                <li>
-                    <a href="/cn/faq.html">常见问答</a>
-                </li>
-                <li>
-                    <a href="/cn/download.html">资料下载</a>
-                </li>
-                <li>
-                    <a href="/cn/feedback.html">需求定制</a>
-                </li>
-                <li>
-                    <a href="/cn/service.html">售后服务</a>
-                </li>
-            </ul>
-        </li>
-        <li class="no_more">
-            <a href="/cn/contact.html">联系我们</a>
-        </li>
-        <li class="has_more" data-index="5">
-            <a href="/cn/#">选择语言
-                <em class="jiantou">&nbsp;</em>
-            </a>
-            <ul>
-                <li>
-                    <a href="/cn/">中文</a>
-                </li>
-                <li>
-                    <a href="/en/">ENGLISH</a>
-                </li>
-            </ul>
-        </li>
-    </ul>
-</div>
-<!--导航块 结束-->
-
-<!--banner 开始-->
-<div class="banner">
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-        <!-- 索引标 -->
-        <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="5"></li>
-        </ol>
-
-        <!-- banner -->
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <img class="hidden-xs" src="./images/banner_1.jpg">
-                <img class="hidden-sm hidden-md hidden-lg" src="./images/banner-mb_1.jpg">
-                <div class="carousel-caption"></div>
-            </div>
-            <div class="item">
-                <img class="hidden-xs" src="./images/banner_2.jpg">
-                <img class="hidden-sm hidden-md hidden-lg" src="./images/banner-mb_2.jpg">
-                <div class="carousel-caption"></div>
-            </div>
-            <div class="item">
-                <img class="hidden-xs" src="./images/banner_3.jpg">
-                <img class="hidden-sm hidden-md hidden-lg" src="./images/banner-mb_3.jpg">
-                <div class="carousel-caption"></div>
-            </div>
-            <div class="item">
-                <img class="hidden-xs" src="./images/banner_4.jpg">
-                <img class="hidden-sm hidden-md hidden-lg" src="./images/banner-mb_4.jpg">
-                <div class="carousel-caption"></div>
-            </div>
-            <div class="item">
-                <img class="hidden-xs" src="./images/banner_5.jpg">
-                <img class="hidden-sm hidden-md hidden-lg" src="./images/banner-mb_5.jpg">
-                <div class="carousel-caption"></div>
-            </div>
-            <div class="item">
-                <img class="hidden-xs" src="./images/banner_6.jpg">
-                <img class="hidden-sm hidden-md hidden-lg" src="./images/banner-mb_6.jpg">
-                <div class="carousel-caption"></div>
+                <div class="subnav_section" data-section="subnav_5">
+                    <div class="row">
+                        <div class="col-sm-3 subnav_con">
+                            <a href="javascript:;">
+                                <span class="lazy-loaded over">
+                                    <img src="images/C-5-1.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-5-1.jpg" style="">
+                                </span>
+                                <h3>常见问答</h3>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 subnav_con">
+                            <a href="javascript:;">
+                                <span class="lazy-loaded over">
+                                    <img src="images/C-5-2.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-5-2.jpg" style="">
+                                </span>
+                                <h3>资料下载</h3>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 subnav_con">
+                            <a href="javascript:;">
+                                <span class="lazy-loaded over">
+                                    <img src="images/C-5-3.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-5-3.jpg" style="">
+                                </span>
+                                <h3>需求定制</h3>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 subnav_con">
+                            <a href="javascript:;">
+                                <span class="lazy-loaded over">
+                                    <img src="images/C-5-4.jpg" class="img-responsive center-block lazy" data-original="/static/image/C-5-4.jpg" style="">
+                                </span>
+                                <h3>售后服务</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="subnav_section " data-section="subnav_6">
+                </div>
             </div>
         </div>
 
-        <!-- 左右翻页 -->
-        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-        </a>
     </div>
-</div>
-<!--banner 结束-->
+    <!-- 手机 -->
+    <div id="mob_nav">
+        <ul>
+            <li class="search clearfix">
+                <span class="prev">
+                    <a href="/cn//">首页</a>
+                </span>
+                <div id="mob_nav_close">
+                </div>
+            </li>
+            <li class="has_more" data-index="0">
+                <a href="/cn/#">关于哈瓦
+                    <em class="jiantou">&nbsp;</em>
+                </a>
+                <ul>
+                    <li>
+                        <a href="/cn/about.html">公司概况</a>
+                    </li>
+                    <li>
+                        <a href="/cn/honor.html">荣誉资质</a>
+                    </li>
+                    <li>
+                        <a href="/cn/history.html">哈瓦大事记</a>
+                    </li>
+                    <li>
+                        <a href="/cn/contact.html">联系我们</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="has_more" data-index="1">
+                <a href="/cn/news">新闻资讯
+                    <em class="jiantou">&nbsp;</em>
+                </a>
+                <ul>
+                    <li>
+                        <a href="/cn/news/list_5_1.html">企业新闻</a>
+                    </li>
+                    <li>
+                        <a href="/cn/news/list_6_1.html">展会活动</a>
+                    </li>
+                    <li>
+                        <a href="/cn/news/list_7_1.html">媒体报道</a>
+                    </li>
+                    <li>
+                        <a href="/cn/news/list_8_1.html">行业动态</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="has_more" data-index="2">
+                <a href="/cn/uav">产品中心
+                    <em class="jiantou">&nbsp;</em>
+                </a>
+                <ul>
+                    <li>
+                        <a href="/cn/product/">无人机</a>
+                    </li>
+                    <li>
+                        <a href="/cn/product/list_10_1.html">挂载云台</a>
+                    </li>
+                    <li>
+                        <a href="/cn/product/list_11_1.html">地面站</a>
+                    </li>
+                    <li>
+                        <a href="/cn/product/list_12_1.html">相关配件</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="has_more" data-index="3">
+                <a href="/cn/solution">行业应用
+                    <em class="jiantou">&nbsp;</em>
+                </a>
+                <ul>
+                    <li>
+                        <a href="/cn/solution/police.html">公安执法</a>
+                    </li>
+                    <li>
+                        <a href="/cn/solution/fire.html">消防救援</a>
+                    </li>
+                    <li>
+                        <a href="/cn/solution/electricity.html">电力应用</a>
+                    </li>
+                    <li>
+                        <a href="/cn/solution/petrochemical.html">石化应用</a>
+                    </li>
+                    <li>
+                        <a href="/cn/solution/mapping.html">测绘勘察</a>
+                    </li>
+                    <li>
+                        <a href="/cn/solution/building.html">路桥建设</a>
+                    </li>
+                    <li>
+                        <a href="/cn/solution/water.html">水利巡检</a>
+                    </li>
+                    <li>
+                        <a href="/cn/solution/environment.html">环保监测</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="has_more" data-index="4">
+                <a href="/cn/#">售后服务
+                    <em class="jiantou">&nbsp;</em>
+                </a>
+                <ul>
+                    <li>
+                        <a href="/cn/faq.html">常见问答</a>
+                    </li>
+                    <li>
+                        <a href="/cn/download.html">资料下载</a>
+                    </li>
+                    <li>
+                        <a href="/cn/feedback.html">需求定制</a>
+                    </li>
+                    <li>
+                        <a href="/cn/service.html">售后服务</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="no_more">
+                <a href="/cn/contact.html">联系我们</a>
+            </li>
+            <li class="has_more" data-index="5">
+                <a href="/cn/#">选择语言
+                    <em class="jiantou">&nbsp;</em>
+                </a>
+                <ul>
+                    <li>
+                        <a href="/cn/">中文</a>
+                    </li>
+                    <li>
+                        <a href="/en/">ENGLISH</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!--导航块 结束-->
 
-<!--宣传块 开始-->
-<div id="container">
-    <!-- 卡片 -->
-    <div class="card">
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="card_multi_img">
-                    <div class="card_l_img">
-                        <a href="javascript:;">
-                            <span>
-                                <img src="./images/card_01.jpg">
-                            </span>
-                        </a>
-                    </div>
-                    <div class="card_l_info">
-                        <a href="javascript:;">
-                            <!--  <div class="card_info_wrap">
+    <!--banner 开始-->
+    <div class="banner">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- 索引标 -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+            </ol>
+
+            <!-- banner -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img class="hidden-xs" src="./images/banner_1.jpg">
+                    <img class="hidden-sm hidden-md hidden-lg" src="./images/banner-mb_1.jpg">
+                    <div class="carousel-caption"></div>
+                </div>
+                <div class="item">
+                    <img class="hidden-xs" src="./images/banner_2.jpg">
+                    <img class="hidden-sm hidden-md hidden-lg" src="./images/banner-mb_2.jpg">
+                    <div class="carousel-caption"></div>
+                </div>
+                <div class="item">
+                    <img class="hidden-xs" src="./images/banner_3.jpg">
+                    <img class="hidden-sm hidden-md hidden-lg" src="./images/banner-mb_3.jpg">
+                    <div class="carousel-caption"></div>
+                </div>
+                <div class="item">
+                    <img class="hidden-xs" src="./images/banner_4.jpg">
+                    <img class="hidden-sm hidden-md hidden-lg" src="./images/banner-mb_4.jpg">
+                    <div class="carousel-caption"></div>
+                </div>
+                <div class="item">
+                    <img class="hidden-xs" src="./images/banner_5.jpg">
+                    <img class="hidden-sm hidden-md hidden-lg" src="./images/banner-mb_5.jpg">
+                    <div class="carousel-caption"></div>
+                </div>
+                <div class="item">
+                    <img class="hidden-xs" src="./images/banner_6.jpg">
+                    <img class="hidden-sm hidden-md hidden-lg" src="./images/banner-mb_6.jpg">
+                    <div class="carousel-caption"></div>
+                </div>
+            </div>
+
+            <!-- 左右翻页 -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            </a>
+        </div>
+    </div>
+    <!--banner 结束-->
+
+    <!--宣传块 开始-->
+    <div id="container">
+        <!-- 卡片 -->
+        <div class="card">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card_multi_img">
+                        <div class="card_l_img">
+                            <a href="javascript:;">
+                                <span>
+                                    <img src="./images/card_01.jpg">
+                                </span>
+                            </a>
+                        </div>
+                        <div class="card_l_info">
+                            <a href="javascript:;">
+                                <!--  <div class="card_info_wrap">
                             <h3> 为严苛环境而生 </h3>
                             <p> 哈瓦无人机机身轻，刚性好、载重大、续航长、安全、智能，已通过国家级专业测试、能耐高低温、防风、防雨、防尘、防电磁干扰，从容应对各种严苛环境！</p>
                         </div> -->
-                        </a>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="card_multi_img">
+                                <div class="card_l_img">
+                                    <a href="javascript:;">
+                                        <span>
+                                            <img src="./images/card_02.jpg">
+                                        </span>
+                                    </a>
+                                </div>
+                                <!--   <div class="card_l_info">
+                                <a href="javascript:;">
+                                    <div class="card_info_wrap">
+                                        <h3> 为严苛环境而生 </h3>
+                                        <p> 哈瓦无人机机身轻，刚性好、载重大、续航长、安全、智能，已通过国家级专业测试、能耐高低温、防风、防雨、防尘、防电磁干扰，从容应对各种严苛环境！</p>
+                                    </div>
+                                </a>
+                            </div> -->
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="card_multi_img">
+                                <div class="card_l_img">
+                                    <a href="javascript:;">
+                                        <span>
+                                            <img src="./images/card_03.jpg">
+                                        </span>
+                                    </a>
+                                </div>
+                                <!--  <div class="card_l_info">
+                                <a href="javascript:;">
+                                    <div class="card_info_wrap">
+                                        <h3> 为严苛环境而生 </h3>
+                                        <p> 哈瓦无人机机身轻，刚性好、载重大、续航长、安全、智能，已通过国家级专业测试、能耐高低温、防风、防雨、防尘、防电磁干扰，从容应对各种严苛环境！</p>
+                                    </div>
+                                </a>
+                            </div> -->
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6">
+
+            <!-- 应用轮播 -->
+            <div class="carousel">
+                <div id="application-carousel" class="carousel slide" data-ride="carousel">
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner rotate" role="listbox">
+                        <div class="item active">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="card_multi_img">
+                                        <div class="card_l_img">
+                                            <a href="javascript:;">
+                                                <span>
+                                                    <img src="./images/thumb_1.jpg">
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="card_l_info">
+                                            <a href="javascript:;">
+                                                <!--  <div class="card_info_wrap">
+                                                <h3> 为严苛环境而生 </h3>
+                                                <p> 哈瓦无人机机身轻，刚性好、载重大、续航长、安全、智能，已通过国家级专业测试、能耐高低温、防风、防雨、防尘、防电磁干扰，从容应对各种严苛环境！</p>
+                                        </div> -->
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="card_multi_img">
+                                        <div class="card_l_img">
+                                            <a href="javascript:;">
+                                                <span>
+                                                    <img src="./images/thumb_2.jpg">
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="card_l_info">
+                                            <a href="javascript:;">
+                                                <!--  <div class="card_info_wrap">
+                                                <h3> 为严苛环境而生 </h3>
+                                                <p> 哈瓦无人机机身轻，刚性好、载重大、续航长、安全、智能，已通过国家级专业测试、能耐高低温、防风、防雨、防尘、防电磁干扰，从容应对各种严苛环境！</p>
+                                        </div> -->
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="card_multi_img">
+                                        <div class="card_l_img">
+                                            <a href="javascript:;">
+                                                <span>
+                                                    <img src="./images/thumb_3.jpg">
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="card_l_info">
+                                            <a href="javascript:;">
+                                                <!--  <div class="card_info_wrap">
+                                                <h3> 为严苛环境而生 </h3>
+                                                <p> 哈瓦无人机机身轻，刚性好、载重大、续航长、安全、智能，已通过国家级专业测试、能耐高低温、防风、防雨、防尘、防电磁干扰，从容应对各种严苛环境！</p>
+                                        </div> -->
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="card_multi_img">
+                                        <div class="card_l_img">
+                                            <a href="javascript:;">
+                                                <span>
+                                                    <img src="./images/thumb_4.jpg">
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="card_l_info">
+                                            <a href="javascript:;">
+                                                <!--  <div class="card_info_wrap">
+                                                <h3> 为严苛环境而生 </h3>
+                                                <p> 哈瓦无人机机身轻，刚性好、载重大、续航长、安全、智能，已通过国家级专业测试、能耐高低温、防风、防雨、防尘、防电磁干扰，从容应对各种严苛环境！</p>
+                                        </div> -->
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="card_multi_img">
+                                        <div class="card_l_img">
+                                            <a href="javascript:;">
+                                                <span>
+                                                    <img src="./images/thumb_5.jpg">
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="card_l_info">
+                                            <a href="javascript:;">
+                                                <!--  <div class="card_info_wrap">
+                                                <h3> 为严苛环境而生 </h3>
+                                                <p> 哈瓦无人机机身轻，刚性好、载重大、续航长、安全、智能，已通过国家级专业测试、能耐高低温、防风、防雨、防尘、防电磁干扰，从容应对各种严苛环境！</p>
+                                        </div> -->
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="card_multi_img">
+                                        <div class="card_l_img">
+                                            <a href="javascript:;">
+                                                <span>
+                                                    <img src="./images/thumb_6.jpg">
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="card_l_info">
+                                            <a href="javascript:;">
+                                                <!--  <div class="card_info_wrap">
+                                                <h3> 为严苛环境而生 </h3>
+                                                <p> 哈瓦无人机机身轻，刚性好、载重大、续航长、安全、智能，已通过国家级专业测试、能耐高低温、防风、防雨、防尘、防电磁干扰，从容应对各种严苛环境！</p>
+                                        </div> -->
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="card_multi_img">
+                                        <div class="card_l_img">
+                                            <a href="javascript:;">
+                                                <span>
+                                                    <img src="./images/thumb_7.jpg">
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="card_l_info">
+                                            <a href="javascript:;">
+                                                <!--  <div class="card_info_wrap">
+                                                <h3> 为严苛环境而生 </h3>
+                                                <p> 哈瓦无人机机身轻，刚性好、载重大、续航长、安全、智能，已通过国家级专业测试、能耐高低温、防风、防雨、防尘、防电磁干扰，从容应对各种严苛环境！</p>
+                                        </div> -->
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="card_multi_img">
+                                        <div class="card_l_img">
+                                            <a href="javascript:;">
+                                                <span>
+                                                    <img src="./images/thumb_8.jpg">
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="card_l_info">
+                                            <a href="javascript:;">
+                                                <!--  <div class="card_info_wrap">
+                                                <h3> 为严苛环境而生 </h3>
+                                                <p> 哈瓦无人机机身轻，刚性好、载重大、续航长、安全、智能，已通过国家级专业测试、能耐高低温、防风、防雨、防尘、防电磁干扰，从容应对各种严苛环境！</p>
+                                        </div> -->
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#application-carousel" role="button" data-slide="prev">
+
+                    </a>
+                    <a class="right carousel-control" href="#application-carousel" role="button" data-slide="next">
+
+                    </a>
+                </div>
+            </div>
+            <!-- 视频 -->
+            <div class="video">
                 <div class="row">
-                    <div class="col-sm-12">
-                        <div class="card_multi_img">
-                            <div class="card_l_img">
-                                <a href="javascript:;">
-                                    <span>
-                                        <img src="./images/card_02.jpg">
-                                    </span>
-                                </a>
-                            </div>
-                            <!--   <div class="card_l_info">
-                                <a href="javascript:;">
-                                    <div class="card_info_wrap">
-                                        <h3> 为严苛环境而生 </h3>
-                                        <p> 哈瓦无人机机身轻，刚性好、载重大、续航长、安全、智能，已通过国家级专业测试、能耐高低温、防风、防雨、防尘、防电磁干扰，从容应对各种严苛环境！</p>
-                                    </div>
-                                </a>
-                            </div> -->
-                        </div>
-                    </div>
-                    <div class="col-sm-12">
-                        <div class="card_multi_img">
-                            <div class="card_l_img">
-                                <a href="javascript:;">
-                                    <span>
-                                        <img src="./images/card_03.jpg">
-                                    </span>
-                                </a>
-                            </div>
-                            <!--  <div class="card_l_info">
-                                <a href="javascript:;">
-                                    <div class="card_info_wrap">
-                                        <h3> 为严苛环境而生 </h3>
-                                        <p> 哈瓦无人机机身轻，刚性好、载重大、续航长、安全、智能，已通过国家级专业测试、能耐高低温、防风、防雨、防尘、防电磁干扰，从容应对各种严苛环境！</p>
-                                    </div>
-                                </a>
-                            </div> -->
-                        </div>
-                    </div>
-
+                    <a href="javascript:;">
+                        <span>
+                            <img src="./images/video.jpg">
+                        </span>
+                    </a>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- 应用轮播 -->
-        <div class="carousel">
-            <div id="application-carousel" class="carousel slide" data-ride="carousel">
+    <!--宣传块 结束-->
+    <!-- 新闻块 开始-->
+    <div class=" lg-container">
+        <div class="news row">
+            <div class="n_tit">
+                <a class="more" href="#">+</a>
+                Harwar News
+                <br>
+                <em>哈瓦新闻</em>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 news_left">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div class="new_l">
+                                <div class="new_lim">
+                                    <img src="images/1-30115848808.jpg" alt="">
+                                </div>
+                                <h4>2亿+像素三维立体影像，这才是无人机测绘真旗舰</h4>
+                                <div class="new_p hidden-xs"> 哈瓦三维立体摄影系统是通过在同一挂载云台上搭载五台传感器（总像素高达2.12亿），同时从垂直、侧视等不同的角度采集…</div>
+                                <div class="new_tiem hidden-lg hidden-md hidden-sm"> 2017-09-30</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="new_l">
+                                <div class="new_lim">
+                                    <img src="images/1-28145650812.jpg" alt="">
+                                </div>
+                                <h4>哈瓦警用无人机应邀出席山西国际社会公共安全产品博览会</h4>
+                                <div class="new_p hidden-xs"> “普及安防知识、展示先进技术、发展创新、科技引领”2017第四届山西国际社会公共安全产品博览会于9月27日至29日在中国…</div>
+                                <div class="new_tiem hidden-lg hidden-md hidden-sm"> 2017-09-30</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="new_l">
+                                <div class="new_lim">
+                                    <img src="images/1-1FQ21A454O0.jpg" alt="">
+                                </div>
+                                <h4>国外的麦田怪圈弱爆了，中国菜花田里种出龙袍图！</h4>
+                                <div class="new_p hidden-xs"> 无人机测绘技术不仅能应用于现代化的精准农业，还能助现代旅游农业一臂之力！…</div>
+                                <div class="new_tiem hidden-lg hidden-md hidden-sm"> 2017-09-30</div>
+                            </div>
 
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner rotate" role="listbox">
-                    <div class="item active">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="card_multi_img">
-                                    <div class="card_l_img">
-                                        <a href="javascript:;">
-                                            <span>
-                                                <img src="./images/thumb_1.jpg">
-                                            </span>
-                                        </a>
-                                    </div>
-                                    <div class="card_l_info">
-                                        <a href="javascript:;">
-                                            <!--  <div class="card_info_wrap">
-                                                <h3> 为严苛环境而生 </h3>
-                                                <p> 哈瓦无人机机身轻，刚性好、载重大、续航长、安全、智能，已通过国家级专业测试、能耐高低温、防风、防雨、防尘、防电磁干扰，从容应对各种严苛环境！</p>
-                                        </div> -->
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="card_multi_img">
-                                    <div class="card_l_img">
-                                        <a href="javascript:;">
-                                            <span>
-                                                <img src="./images/thumb_2.jpg">
-                                            </span>
-                                        </a>
-                                    </div>
-                                    <div class="card_l_info">
-                                        <a href="javascript:;">
-                                            <!--  <div class="card_info_wrap">
-                                                <h3> 为严苛环境而生 </h3>
-                                                <p> 哈瓦无人机机身轻，刚性好、载重大、续航长、安全、智能，已通过国家级专业测试、能耐高低温、防风、防雨、防尘、防电磁干扰，从容应对各种严苛环境！</p>
-                                        </div> -->
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 news_right">
+                <a href="#">
+                    <div class="new_r_box">
+                        <div class="new_bim">
+                            <img src="images/1-1FG41GH5E1.jpg" alt="">
+                        </div>
+                        <h4>“放眼祖国北疆·聚焦内蒙安防” 哈瓦在内蒙古警用装备展备受关注</h4>
+                        <div class="new_time hidden-sm hidden-xs">
+                            2017-07-01
                         </div>
                     </div>
-                    <div class="item">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="card_multi_img">
-                                    <div class="card_l_img">
-                                        <a href="javascript:;">
-                                            <span>
-                                                <img src="./images/thumb_3.jpg">
-                                            </span>
-                                        </a>
-                                    </div>
-                                    <div class="card_l_info">
-                                        <a href="javascript:;">
-                                            <!--  <div class="card_info_wrap">
-                                                <h3> 为严苛环境而生 </h3>
-                                                <p> 哈瓦无人机机身轻，刚性好、载重大、续航长、安全、智能，已通过国家级专业测试、能耐高低温、防风、防雨、防尘、防电磁干扰，从容应对各种严苛环境！</p>
-                                        </div> -->
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="card_multi_img">
-                                    <div class="card_l_img">
-                                        <a href="javascript:;">
-                                            <span>
-                                                <img src="./images/thumb_4.jpg">
-                                            </span>
-                                        </a>
-                                    </div>
-                                    <div class="card_l_info">
-                                        <a href="javascript:;">
-                                            <!--  <div class="card_info_wrap">
-                                                <h3> 为严苛环境而生 </h3>
-                                                <p> 哈瓦无人机机身轻，刚性好、载重大、续航长、安全、智能，已通过国家级专业测试、能耐高低温、防风、防雨、防尘、防电磁干扰，从容应对各种严苛环境！</p>
-                                        </div> -->
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="card_multi_img">
-                                    <div class="card_l_img">
-                                        <a href="javascript:;">
-                                            <span>
-                                                <img src="./images/thumb_5.jpg">
-                                            </span>
-                                        </a>
-                                    </div>
-                                    <div class="card_l_info">
-                                        <a href="javascript:;">
-                                            <!--  <div class="card_info_wrap">
-                                                <h3> 为严苛环境而生 </h3>
-                                                <p> 哈瓦无人机机身轻，刚性好、载重大、续航长、安全、智能，已通过国家级专业测试、能耐高低温、防风、防雨、防尘、防电磁干扰，从容应对各种严苛环境！</p>
-                                        </div> -->
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="card_multi_img">
-                                    <div class="card_l_img">
-                                        <a href="javascript:;">
-                                            <span>
-                                                <img src="./images/thumb_6.jpg">
-                                            </span>
-                                        </a>
-                                    </div>
-                                    <div class="card_l_info">
-                                        <a href="javascript:;">
-                                            <!--  <div class="card_info_wrap">
-                                                <h3> 为严苛环境而生 </h3>
-                                                <p> 哈瓦无人机机身轻，刚性好、载重大、续航长、安全、智能，已通过国家级专业测试、能耐高低温、防风、防雨、防尘、防电磁干扰，从容应对各种严苛环境！</p>
-                                        </div> -->
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="card_multi_img">
-                                    <div class="card_l_img">
-                                        <a href="javascript:;">
-                                            <span>
-                                                <img src="./images/thumb_7.jpg">
-                                            </span>
-                                        </a>
-                                    </div>
-                                    <div class="card_l_info">
-                                        <a href="javascript:;">
-                                            <!--  <div class="card_info_wrap">
-                                                <h3> 为严苛环境而生 </h3>
-                                                <p> 哈瓦无人机机身轻，刚性好、载重大、续航长、安全、智能，已通过国家级专业测试、能耐高低温、防风、防雨、防尘、防电磁干扰，从容应对各种严苛环境！</p>
-                                        </div> -->
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="card_multi_img">
-                                    <div class="card_l_img">
-                                        <a href="javascript:;">
-                                            <span>
-                                                <img src="./images/thumb_8.jpg">
-                                            </span>
-                                        </a>
-                                    </div>
-                                    <div class="card_l_info">
-                                        <a href="javascript:;">
-                                            <!--  <div class="card_info_wrap">
-                                                <h3> 为严苛环境而生 </h3>
-                                                <p> 哈瓦无人机机身轻，刚性好、载重大、续航长、安全、智能，已通过国家级专业测试、能耐高低温、防风、防雨、防尘、防电磁干扰，从容应对各种严苛环境！</p>
-                                        </div> -->
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Controls -->
-                <a class="left carousel-control" href="#application-carousel" role="button" data-slide="prev">
-
-                </a>
-                <a class="right carousel-control" href="#application-carousel" role="button" data-slide="next">
-
                 </a>
             </div>
-        </div>
-    <!-- 视频 -->
-        <div class="video">
-            <div class="row">
-                <a href="javascript:;">
-                    <span>
-                        <img src="./images/video.jpg">
-                    </span>
+            <div class="col-md-3 col-sm-6 col-xs-6 news_right">
+                <a href="#">
+                    <div class="new_r_box">
+                        <div class="new_bim">
+                            <img src="images/1-1FQ2152H3S5.jpg" alt="">
+                        </div>
+                        <h4>无人机行业协会会长杨金才就任哈瓦无人机高级顾问</h4>
+                        <div class="new_time hidden-sm hidden-xs">
+                            2017-03-17
+                        </div>
+                    </div>
                 </a>
             </div>
         </div>
     </div>
-</div>
+    <!--新闻块 结束-->
 
-<!--宣传块 结束-->
-<!-- 新闻块 开始-->
-<div class=" lg-container">
-    <div class="news row">
-        <div class="n_tit">
-            <a class="more" href="#">+</a>
-            Harwar News
-            <br>
-            <em>哈瓦新闻</em>
-        </div>
-        <div class="col-md-6 col-sm-12 col-xs-12 news_left">
-            <ul>
-                <li>
-                    <a href="#">
-                        <div class="new_l">
-                            <div class="new_lim">
-                                <img src="images/1-30115848808.jpg" alt="">
-                            </div>
-                            <h4>2亿+像素三维立体影像，这才是无人机测绘真旗舰</h4>
-                            <div class="new_p hidden-xs"> 哈瓦三维立体摄影系统是通过在同一挂载云台上搭载五台传感器（总像素高达2.12亿），同时从垂直、侧视等不同的角度采集…</div>
-                            <div class="new_tiem hidden-lg hidden-md hidden-sm"> 2017-09-30</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div class="new_l">
-                            <div class="new_lim">
-                                <img src="images/1-28145650812.jpg" alt="">
-                            </div>
-                            <h4>哈瓦警用无人机应邀出席山西国际社会公共安全产品博览会</h4>
-                            <div class="new_p hidden-xs"> “普及安防知识、展示先进技术、发展创新、科技引领”2017第四届山西国际社会公共安全产品博览会于9月27日至29日在中国…</div>
-                            <div class="new_tiem hidden-lg hidden-md hidden-sm"> 2017-09-30</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div class="new_l">
-                            <div class="new_lim">
-                                <img src="images/1-1FQ21A454O0.jpg" alt="">
-                            </div>
-                            <h4>国外的麦田怪圈弱爆了，中国菜花田里种出龙袍图！</h4>
-                            <div class="new_p hidden-xs"> 无人机测绘技术不仅能应用于现代化的精准农业，还能助现代旅游农业一臂之力！…</div>
-                            <div class="new_tiem hidden-lg hidden-md hidden-sm"> 2017-09-30</div>
-                        </div>
+    <!--底部 开始-->
+    <footer class="footer">
+        <div class="lg-container">
+            <div class="row hidden-md hidden-xs hidden-sm">
+                <div class="footer_box clearfix">
+                    <div class="footer_fl">
+                        <ul>
+                            <li class="top">关于哈瓦</li>
+                            <li>
+                                <a href="#">公司概况</a>
+                            </li>
+                            <li>
+                                <a href="#">荣誉资质</a>
+                            </li>
+                            <li>
+                                <a href="#">哈瓦大事记</a>
+                            </li>
+                            <li>
+                                <a href="#">加入我们</a>
+                            </li>
+                            <li>
+                                <a href="#">联系我们</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="top">新闻中心</li>
+                            <li>
+                                <a href="#">企业新闻</a>
+                            </li>
+                            <li>
+                                <a href="#">展会活动</a>
+                            </li>
+                            <li>
+                                <a href="#">媒体报道
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">行业动态
+                                </a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="top">商务合作
+                            </li> 
+                            <li>
+                                <a href="#">购买产品
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">定制需求
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">代理销售
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">其它合作
+                                </a>
+                            </li>
+                           
+                        </ul>
+                        <ul>
+                            <li class="top">服务支持
+                            </li>
+                            <li>
+                                <a href="#">常见问题
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">软件下载
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">相关视频
+                                </a>
+                            </li>
 
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="col-md-3 col-sm-6 col-xs-6 news_right">
-            <a href="#">
-                <div class="new_r_box">
-                    <div class="new_bim">
-                        <img src="images/1-1FG41GH5E1.jpg" alt="">
+                            <li>
+                                <a href="#">留言反馈
+
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">飞手查询
+                                </a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="top">售后服务
+                            </li>
+                            <li>
+                                <a href="#">送货上门服务
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">一年质保服务
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">终身技术支持
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">免费设备支持
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">飞手免费培训</a>
+                            </li>
+                        </ul>
+
                     </div>
-                    <h4>“放眼祖国北疆·聚焦内蒙安防” 哈瓦在内蒙古警用装备展备受关注</h4>
-                    <div class="new_time hidden-sm hidden-xs">
-                        2017-07-01
+                    <div class="footer_fr">
+                        <div class="fr_top">关注我们</div>
+                        <div class="qrcode">
+                            <a href="#" class="qrcode_weibo">哈瓦官网微信</a>
+                            <a href="#" class="qrcode_wechat">哈瓦官网微信</a>
+                        </div>
                     </div>
                 </div>
-            </a>
-        </div>
-        <div class="col-md-3 col-sm-6 col-xs-6 news_right">
-            <a href="#">
-                <div class="new_r_box">
-                    <div class="new_bim">
-                        <img src="images/1-1FQ2152H3S5.jpg" alt="">
-                    </div>
-                    <h4>无人机行业协会会长杨金才就任哈瓦无人机高级顾问</h4>
-                    <div class="new_time hidden-sm hidden-xs">
-                        2017-03-17
+                <div class="copyright clearfix">
+                    <div class="cp_l fl">Copyright &copy; 2014-2017 harwar.com All Rights Reserved</div>
+                    <div class="cp_r fr">
+                        <a href="#">粤公网安备 44030902000095号</a>
+                        <a href="#">粤ICP备16009763号</a>
                     </div>
                 </div>
-            </a>
+            </div>
         </div>
-    </div>
-</div>
-<!--新闻块 结束-->
+    </footer>
+    <!--底部 结束-->
 
-<!--底部 开始-->
-<footer class="footer"></footer>
-<!--底部 结束-->
-
-<script src="./lib/jquery/jquery.min.js"></script>
-<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
-<script src="js/com.js"></script>
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/com.js"></script>
 
 </body>
 

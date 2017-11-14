@@ -253,4 +253,85 @@
 /* 新闻块 结束 */
 
 /* 底部块 开始 */
+.footer{
+    background: #202020;
+    margin-top: 20px;
+    margin-bottom: 1px;
+    .row{
+      margin: 0;
+      padding: 0;
+    }
+    .footer_fl{
+      width: 70%;
+      margin-top: 20px;
+      padding-top: 10px;
+      float: left;
+      >ul{
+        width: 20%;
+        float: left;
+        >.top{
+          color: #fff;
+          font-size: 20px;
+          margin-bottom: 10px;
+        }
+        li{
+          padding: 5px;
+          font-size: 14px;
+          height: 32px;
+          line-height: 32px;
+          a{
+            color: #fff;
+          }
+        }
+      }
+    }
+    .footer_fr{
+      width: 340px;
+      margin-top: 20px;
+      padding-top: 10px;
+      float: right;
+      .fr_top{
+        color: #fff;
+        font-size: 20px;
+        line-height: 30px;
+        height: 30px;
+        margin-bottom: 20px
+      }
+      .qrcode{
+        width: 100%;
+        height: 190px;
+        text-align: center;
+        >a{
+          padding-top: 160px;
+          width: 160px;
+          height: 30px;
+          line-height: 30px;
+          color: #CCC;
+        }
+        .qrcode_weibo{
+          float: right;
+          background: url("../images/sprite.png") no-repeat -6px -240px;
+        }
+        .qrcode_wechat{
+          float: left;
+          background: url("../images/sprite.png") no-repeat -6px -448px;
+        }
+      }
+    }
+    .copyright{
+      border-top: #272828 1px solid;
+      color: #474747;
+      height: 39px;
+      line-height: 39px;
+      margin-top: 20px;
+      a{
+         color: #474747;
+         padding-top: 160px;
+        width: 160px;
+        height: 30px;
+        line-height: 30px;
+       
+      }
+    }
+}
 /* 底部块 结束 */
