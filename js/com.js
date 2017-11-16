@@ -357,7 +357,7 @@ function (e) {
             e > 1 ? t.addClass("fixed") : e <= 104 && t.removeClass("fixed")
         })
     }, i.harwar_click = function () {
-        o(document).on("click", "#mob_menuitem,#mob_nav_close", function (e) {
+        o(document).on("click", "#mob_menuitem,.mob_menuitem,#mob_nav_close", function (e) {
             return "vclick" === e.type ? ((navigator.userAgent.indexOf("MSIE ") > 0 || navigator.userAgent.indexOf("Trident") > 0) && o("#mob_menuitem").trigger("tap"), !1) : ("0px" == o("#header").css("left") ? i.harwar_navMenuMobile.open() : i.harwar_navMenuMobile.close(), !1)
         }).on("click", ".has_more>a", function () {
             var e = o(this).parent().children("ul").first(),

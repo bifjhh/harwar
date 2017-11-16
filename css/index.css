@@ -228,6 +228,16 @@
   color: #878787;
   display: block;
 }
+@media screen and (max-width: 991px) {
+  .news .news_r_l {
+    padding-left: 0px;
+    padding-right: 10px;
+  }
+  .news .news_r_r {
+    padding-right: 0px;
+    padding-left: 10px;
+  }
+}
 /* 新闻块 结束 */
 /* 底部块 开始 */
 .footer {
@@ -235,79 +245,119 @@
   margin-top: 20px;
   margin-bottom: 1px;
 }
-.footer .row {
+.footer .row:first-of-type {
   margin: 0;
   padding: 0;
 }
-.footer .footer_fl {
+.footer .row:first-of-type .footer_fl {
   width: 70%;
   margin-top: 20px;
   padding-top: 10px;
   float: left;
 }
-.footer .footer_fl > ul {
+.footer .row:first-of-type .footer_fl > ul {
   width: 20%;
   float: left;
 }
-.footer .footer_fl > ul > .top {
+.footer .row:first-of-type .footer_fl > ul > .top {
   color: #fff;
   font-size: 20px;
   margin-bottom: 10px;
 }
-.footer .footer_fl > ul li {
+.footer .row:first-of-type .footer_fl > ul li {
   padding: 5px;
   font-size: 14px;
   height: 32px;
   line-height: 32px;
 }
-.footer .footer_fl > ul li a {
+.footer .row:first-of-type .footer_fl > ul li a {
   color: #fff;
 }
-.footer .footer_fr {
+.footer .row:first-of-type .footer_fr {
   width: 340px;
   margin-top: 20px;
   padding-top: 10px;
   float: right;
 }
-.footer .footer_fr .fr_top {
+.footer .row:first-of-type .footer_fr .fr_top {
   color: #fff;
   font-size: 20px;
   line-height: 30px;
   height: 30px;
   margin-bottom: 20px;
 }
-.footer .footer_fr .qrcode {
+.footer .row:first-of-type .footer_fr .qrcode {
   width: 100%;
   height: 190px;
   text-align: center;
 }
-.footer .footer_fr .qrcode > a {
+.footer .row:first-of-type .footer_fr .qrcode > a {
   padding-top: 160px;
   width: 160px;
   height: 30px;
   line-height: 30px;
   color: #CCC;
 }
-.footer .footer_fr .qrcode .qrcode_weibo {
+.footer .row:first-of-type .footer_fr .qrcode .qrcode_weibo {
   float: right;
   background: url("../images/sprite.png") no-repeat -6px -240px;
 }
-.footer .footer_fr .qrcode .qrcode_wechat {
+.footer .row:first-of-type .footer_fr .qrcode .qrcode_wechat {
   float: left;
   background: url("../images/sprite.png") no-repeat -6px -448px;
 }
-.footer .copyright {
+.footer .row:first-of-type .copyright {
   border-top: #272828 1px solid;
   color: #474747;
   height: 39px;
   line-height: 39px;
   margin-top: 20px;
 }
-.footer .copyright a {
+.footer .row:first-of-type .copyright a {
   color: #474747;
   padding-top: 160px;
   width: 160px;
   height: 30px;
   line-height: 30px;
+}
+.footer .mobile {
+  background-color: #1e1f24;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  margin: 0;
+}
+.footer .mobile ul li {
+  width: 25%;
+  float: left;
+  padding-top: 10px;
+}
+.footer .mobile ul li > a {
+  display: block;
+  width: 100%;
+  color: #fff;
+}
+.footer .mobile ul li > a > span {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 28px;
+  height: 28px;
+  line-height: 28px;
+}
+.footer .mobile ul li > a > h3 {
+  text-align: center;
+  height: 32px;
+  line-height: 32px;
+  margin: 0;
+  width: 100%;
+}
+@media only screen and (max-width: 991px) {
+  .footer {
+    padding-bottom: 60px;
+  }
 }
 /* 底部块 结束 */
