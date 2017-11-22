@@ -1,13 +1,19 @@
 $(function () {
     var card_img = $('.card_multi_img');
-    console.log(card_img.length);
-    for(var i =0;i<card_img.length;i++){
-        card_img[i].onmouseover=function(){
-            $(this).addClass("hover");
+    var new_l = $('.new_l');
+    mouse(card_img);
+    mouse(new_l);
+    
+    // 封装鼠标经过添加类名的方法
+    function mouse(element){
+        for (var i = 0; i < element.length; i++) {
+            element[i].onmouseover = function () {
+                $(this).addClass("hover");
+            };
+            element[i].onmouseout = function () {
+                $(this).removeClass("hover");
+            };
         };
-        card_img[i].onmouseout = function () {
-            $(this).removeClass("hover");
-        }
     }
 
 })

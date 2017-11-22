@@ -86,6 +86,38 @@
 .card .card_multi_img .card_l_img:hover {
   margin-left: -20px;
 }
+@media only screen and (max-width: 767px) {
+  .card .card_multi_img .card_l_info {
+    position: relative;
+    padding: 0;
+    width: auto;
+    height: auto;
+  }
+  .card .card_multi_img .card_l_info a {
+    padding: 10px 0;
+  }
+  .card .card_multi_img .card_l_info a .card_info_wrap {
+    position: relative;
+    margin-bottom: 0;
+    min-height: 100%;
+    padding: 0;
+  }
+  .card .card_multi_img .card_l_info a .card_info_wrap h3 {
+    color: #333;
+    opacity: 1;
+    transform: translateY(0);
+    margin: 0;
+    font-size: 22px;
+  }
+  .card .card_multi_img .card_l_info a .card_info_wrap p {
+    color: #333;
+    opacity: 1;
+    transform: translateY(0);
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-size: 16px;
+  }
+}
 .card .card_l_info {
   position: absolute;
   top: 0;
@@ -294,6 +326,62 @@
   font-size: 12px;
   color: #878787;
   display: block;
+}
+.news .new_l > span {
+  display: inline-block;
+  height: 2px;
+  width: 2px;
+  background-color: rgba(252, 75, 75, 0.7);
+  position: absolute;
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  opacity: 0;
+  z-index: 99;
+}
+.news .new_l > span:nth-of-type(1) {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.news .new_l > span:nth-of-type(1) span:nth-of-type(1) {
+  opacity: 0;
+  left: 0;
+  transform: translateX(0%);
+  width: 100%;
+}
+.news .new_l > span:nth-of-type(2) {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.news .new_l > span:nth-of-type(3) {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.news .new_l > span:nth-of-type(4) {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.news .new_l.hover > span {
+  opacity: 1;
+  transform: none;
+}
+.news .new_l.hover > span:nth-of-type(1) {
+  left: 0;
+  width: 100%;
+}
+.news .new_l.hover > span:nth-of-type(2) {
+  top: 0;
+  height: 100%;
+}
+.news .new_l.hover > span:nth-of-type(3) {
+  left: 0;
+  width: 100%;
+}
+.news .new_l.hover > span:nth-of-type(4) {
+  top: 0;
+  height: 100%;
 }
 @media screen and (max-width: 991px) {
   .news .news_r_l {
