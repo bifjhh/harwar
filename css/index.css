@@ -1,4 +1,4 @@
-/* 导航块 开始 都是*/
+/* 导航块 开始*/
 /* 导航块  结束 */
 /* banner 开始 */
 .banner {
@@ -72,15 +72,82 @@
 .card .card_multi_img .card_l_img {
   width: 100%;
   height: 100%;
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
-.card .card_multi_img .card_l_img > a span {
+.card .card_multi_img .card_l_img span {
   width: auto !important;
   height: auto !important;
 }
-.card .card_multi_img .card_l_img > a span img {
+.card .card_multi_img .card_l_img img {
   display: block;
   width: 110%;
   height: 110%;
+}
+.card .card_multi_img .card_l_img:hover {
+  margin-left: -20px;
+}
+.card .card_l_info {
+  position: absolute;
+  top: 0;
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.card .card_l_info a {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  margin: 0;
+  padding: 20px 40px;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.card .card_l_info .card_info_wrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 20px;
+  padding: 0 40px 0 40px;
+  width: 100%;
+  min-height: 100px;
+}
+.card .card_l_info .card_info_wrap h3 {
+  position: relative;
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 30px;
+  line-height: 1.2;
+  opacity: 1;
+  transform: translateY(60%);
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.card .card_l_info .card_info_wrap p {
+  position: relative;
+  width: 100%;
+  color: #fff;
+  line-height: 1.5;
+  opacity: 0;
+  transform: translateY(80%);
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.card .card_multi_img.hover .card_l_img {
+  margin-left: -20px;
+}
+.card .card_multi_img.hover .card_l_info a {
+  background: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+.card .card_multi_img.hover .card_l_info a h3 {
+  transform: translateY(0%);
+}
+.card .card_multi_img.hover .card_l_info a p {
+  opacity: 1;
+  transform: translateY(0%);
 }
 .rotate .row {
   padding-left: 10px;

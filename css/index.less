@@ -1,4 +1,4 @@
-/* 导航块 开始 都是*/
+/* 导航块 开始*/
 
 
   /* 导航块  结束 */
@@ -41,56 +41,128 @@
 
   /* 宣传块 开始 */
   //卡片
-  .card {
-    margin: 0 auto;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 15px;
-    padding-left: 15px;
-    width: 100% !important;
-    max-width: 1440px;
-    > .row {
+.card {
+  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100% !important;
+  max-width: 1440px;
+  > .row {
+    margin-right: -10px;
+    margin-left: -10px;
+    padding: 0 5px;
+
+    .row {
       margin-right: -10px;
       margin-left: -10px;
-      padding: 0 5px;
-
-      .row {
-        margin-right: -10px;
-        margin-left: -10px;
-        > .col-sm-12:first-of-type {
-          margin-bottom: 3%;
-        }
-        > .col-sm-12 {
-          padding-right: 10px;
-          padding-left: 10px;
-        }
+      > .col-sm-12:first-of-type {
+        margin-bottom: 3%;
+      }
+      > .col-sm-12 {
+        padding-right: 10px;
+        padding-left: 10px;
       }
     }
-    .col-sm-6 {
-      padding-right: 10px;
-      padding-left: 10px;
-    }
-    .card_multi_img {
-      position: relative;
-      overflow: hidden;
-      .card_l_img {
-        width: 100%;
-        height: 100%;
-        > a {
-          span {
-            width: auto !important;
-            height: auto !important;
-            img {
-              display: block;
-              width: 110%;
-              height: 110%;
-            }
-          }
-        }
-      }
-    }
-
   }
+  .col-sm-6 {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .card_multi_img {
+    position: relative;
+    overflow: hidden;
+    .card_l_img {
+      width: 100%;
+      height: 100%;
+      transition: all 1s cubic-bezier(.19,1,.22,1);
+      span {
+        width: auto !important;
+        height: auto !important; 
+      }  
+      img {
+          display: block;
+          width: 110%;
+          height: 110%;
+      }
+    }
+    .card_l_img:hover{
+      margin-left: -20px;
+    }
+  }
+  
+  .card_l_info{
+    position: absolute;
+    top: 0;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    a{
+      position: relative;
+      top: 0;
+      left: 0;
+      display: block;
+      margin: 0;
+      padding: 20px 40px;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      transition: all 1s cubic-bezier(.19,1,.22,1);
+      }
+      
+      .card_info_wrap{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin-bottom: 20px;
+        padding: 0 40px 0 40px;
+        width: 100%;
+        min-height: 100px;
+        h3{
+          position: relative;
+          margin-bottom: 10px;
+          color: #fff;
+          font-size: 30px;
+          line-height: 1.2;
+          opacity: 1;
+          transform: translateY(60%);
+          transition: all 1s cubic-bezier(.19,1,.22,1);
+        }
+        p{    
+          position: relative;
+          width: 100%;
+          color: #fff;
+          line-height: 1.5;
+          opacity: 0;
+          transform: translateY(80%);
+          transition: all 1s cubic-bezier(.19,1,.22,1);
+        }
+      }
+  
+  }
+.card_multi_img.hover{
+    .card_l_img{
+      margin-left: -20px;
+    }
+    .card_l_info{
+      a{
+        background: rgba(0,0,0,.5);
+        text-decoration: none;
+      h3{
+        transform: translateY(0%);
+      }
+      p{
+        opacity: 1;
+        transform: translateY(0%);
+      }
+    }
+      
+    }
+  }
+}
   //应用轮播
 .rotate{
   .row{
@@ -167,21 +239,21 @@
           position: relative;
           color: #757575;
         .new_lim{
-            margin: 1px;
-            float: left;
-            margin-right: 17px;
-            display: block;
-            width: 150px;
-            height: 100px;
-            // height: 100%;
-            overflow: hidden;
-            font-size: 0;
-            line-height: 100px;
-            text-align: center;
-            position: relative;
-            img{
-              width: 100%;
-            }
+          margin: 1px;
+          float: left;
+          margin-right: 17px;
+          display: block;
+          width: 150px;
+          height: 100px;
+          // height: 100%;
+          overflow: hidden;
+          font-size: 0;
+          line-height: 100px;
+          text-align: center;
+          position: relative;
+          img{
+            width: 100%;
+          }
             
         }
       >h4{
